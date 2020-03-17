@@ -1,4 +1,5 @@
 import React from "react"
+import { productName, url, twitterHandle, googleSiteVerificationId, metomicProjectId, googleAnalyticsId } from './shared/meta.js'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -31,7 +32,7 @@ module.exports = class HTML extends React.Component {
           />
           <meta 
             name="google-site-verification" 
-            content="rUNq8lzwm3z15gaVNUa43iEQ-gKP0WJhkb_qko81oTc" 
+            content={googleSiteVerificationId}
           />
 
           {/* Schema.org tags */}
@@ -40,10 +41,10 @@ module.exports = class HTML extends React.Component {
                 {
                   "@context": "http://schema.org",
                   "@type": "Organization",
-                  "name": "GDPR Checklist",
-                  "url": "https://www.gdprchecklist.io",
+                  "name": ${productName},
+                  "url": ${url},
                   "sameAs": [
-                      "https://twitter.com/gdpr_checklist"
+                      "https://twitter.com/${twitterHandle}"
                   ]
                 } 
             `}} />
@@ -51,16 +52,16 @@ module.exports = class HTML extends React.Component {
           {css}
         
 
-        <script src="https://config.metomic.io/config.js?id=prj:988a7db4-229a-479f-878f-653cbe48c5cb" crossorigin charset="utf-8"></script>
+        <script src={`https://config.metomic.io/config.js?id=prj:${metomicProjectId}`} crossorigin charset="utf-8"></script>
         <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
         
-        <script type="text/x-metomic" data-micropolicy="statistics"  async src="https://www.googletagmanager.com/gtag/js?id=UA-113160447-1"></script>
+        <script type="text/x-metomic" data-micropolicy="statistics"  async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}></script>
         <script type="text/x-metomic" data-micropolicy="statistics" dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'UA-113160447-1');
+              gtag('config', ${googleAnalyticsId});
             `}} />
 
         </head>

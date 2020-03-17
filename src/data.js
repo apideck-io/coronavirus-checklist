@@ -1,521 +1,564 @@
 export const steps = [
   {
-    id: 'data',
-    title:'Data',
-    items: [,
-      {
-        id: 1,
-        title: 'Your company has a list of all types of personal information it holds, the source of that information, who you share it with, what you do with it and how long you will keep it',
-        role: ['processor', 'controller'],
-        description: 'This is a list of the actual types (columns) of information being held (eg Name, social security nr, address,..). For each type, a source should be documented, the parties this information is shared with, the purpose of the information and the duration for which the company will keep this information.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
-           title: 'GDPR Article 30 – Records of processing activities'
-          },
-          {
-            href: "https://gdprplug.in/gdpr-data-map/",
-            title: "GDPR Data Map Template"
-          }
-        ]
-      },
-      {
-        id: 2,
-        title: 'Your company has a list of places where it keeps personal information and the ways data flows between them',
-        role: [ 'processor', 'controller'],
-        description: 'This could be a list of databases (eg Mysql), but it could also include offline datastores (paper).',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
-           title: 'GDPR Article 30 – Records of processing activities'
-          }
-        ]
-      },
-      {
-        id: 3,
-        title: 'Your company has a publicly accessible privacy policy that outlines all processes related to personal data.',
-        role: ['processor', 'controller'],
-        description: 'You should include information about all processes related to the handling of personal information. This document should include (or have links to) the types of personal information the company holds, and where it holds them. ',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
-           title: 'GDPR Article 30 – Records of processing activities'
-          }
-        ]
-      },
-      {
-        id: 4,
-        title: 'Your privacy policy should include a lawful basis to explain why the company needs to process personal information',
-        role: [ 'controller'],
-        description: 'It should contain a reason for data processing, eg the fulfillment of a contract.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/lawfulness-of-processing/",
-           title: 'GDPR Article 6 – Lawfulness of processing'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'accountability-management',
-    title:'Accountability & management',
-    items: [{
-        id: 1,
-        title: 'Your company has appointed a Data Protection Officer (DPO)',
-        role: ['processor', 'controller'],
-        description: 'A DPO is only required in three scenarios: (1) the processing is carried out by a public authority or body, except for courts acting in their judicial capacity; (2) the core activities of the business consist of processing operations which, by virtue of their nature, scope, and/or purposes, require regular and systematic monitoring of data subjects on a large scale, or (3) the core activities of the business consist of processing on a large scale special categories of data (sensitive data) pursuant to Article 9 and personal data relating to criminal convictions or offenses pursuant to Article 10. If a DPO is required, the DPO should have knowledge of GDPR guidelines as well as knowledge about the internal processes that involve personal information.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/designation-of-the-data-protection-officer/",
-           title: 'GDPR Article 37 – Designation of the data protection officer'
-          }
-        ]
-      },
-      {
-        id: 2,
-        title: 'Create awareness among decision makers about GDPR guidelines',
-        role: ['processor', 'controller'],
-        description: 'Make sure key people and decision makers have up-to-date knowledge about the data protection legislation.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
-           title: 'GDPR Article 25 – Data protection by design and by default'
-          }
-        ]
-      },
-      {
-        id: 3,
-        title: 'Make sure your technical security is up to date. ',
-        role: ['processor', 'controller'],
-        description: 'For SaaS software companies, use the SaaS CTO security checklist as a starting point below.',
-        links: [
-          {title: "SaaS CTO security checklist",
-           href: 'https://cto-security-checklist.sqreen.io/'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
-           title: 'GDPR Article 25 – Data protection by design and by default'
-          }
-        ]
-      },
-      {
-        id: 4,
-        title: 'Train staff to be aware of data protection',
-        role: ['processor'],
-        description: 'A lot of security vulnerabilities involve cooperation of an unwitting person with access to internal systems. Make sure your employees are aware of these risks.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
-           title: 'GDPR Article 25 – Data protection by design and by default'
-          }
-        ]
-      },
-      {
-        id: 5,
-        title: 'You have a list of sub-processors and your privacy policy mentions your use of this sub-processor',
-        role: ['processor'],
-        description: 'You should inform your customers of the use of any sub-processor. They should consent by accepting your privacy policy.',
-        links: [
-          {
-            href: "https://advisera.com/eugdpracademy/gdpr/processor/",
-            title: 'GDPR Article 28 – Processor'
-          },
-          {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Keep track of the GDPR compliance of cloud services & subprocessors"
-          }
-        ]
-      },
-      {
-        id: 6,
-        title: 'If your business operates outside the EU, you have appointed a representative within the EU.',
-        role: ['processor', 'controller'],
-        description: 'If you have a business outside of the EU and you collect data on EU citizens, you should assign a representative in one of the member states for your business. This person should handle all issues related to processing. In particular, a local authority should be able to contact this person.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/representatives-of-controllers-or-processors-not-established-in-the-union/",
-           title: 'GDPR Article 27 – Representatives of controllers or processors not established in the Union'
-          }
-        ]
-      },{
-        id: 7,
-        title: 'You report data breaches involving personal data to the local authority and to the people (data subjects) involved',
-        role: ['processor', 'controller'],
-        description: 'Personal data breaches should be reported within 72 hours to the local authority. You should report what data has been lost, what the consequences are and what countermeasures you have taken. Unless the data leaked was encrypted, you should also report the breach to the person (data subject) whose data you lost.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/notification-of-a-personal-data-breach-to-the-supervisory-authority/",
-           title: 'GDPR Article 33 – Notification of a personal data breach to the supervisory authority'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/communication-of-a-personal-data-breach-to-the-data-subject/",
-           title: 'GDPR Article 34 – Communication of a personal data breach to the data subject'
-          }
-        ]
-      },{
-        id: 8,
-        title: 'There is a contract in place with any data processors that you share data with',
-        role: [ 'controller'],
-        description: 'The contract should contain explicit instructions for the storage or processing of data by the processor. The contract should set out the subject matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. For example, this could include a contract with your hosting provider. The same contract requirements apply when a processor engages a sub-processor to assist it in fulfilling processing activities on behalf of the controller',
-        links: [
-          {
-            href: "https://advisera.com/eugdpracademy/gdpr/processor/",
-            title: 'GDPR Article 28 – Processor'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/processing-under-the-authority-of-the-controller-or-processor/",
-           title: 'GDPR Article 29 – Processing under the authority of the controller or processor'
-          },
-          {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'new-rights',
-    title:'New rights',
-    items: [,
-      {
-        id: 1,
-        title: 'Your customers can easily request access to their personal information',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
-        links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-of-access-by-the-data-subject/",
-              title: 'GDPR Article 15 – Right of access by the data subject'
-            }
-        ]
-      },
-      {
-        id: 2,
-        title: 'Your customers can easily update their own personal information to keep it accurate',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
-        links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-rectification/",
-              title: 'GDPR Article 16 – Right to rectification'
-            }
-        ]
-      },
-      {
-        id: 3,
-        title: 'You automatically delete data that your business no longer has any use for',
-        role: ['processor', 'controller'],
-        description: 'You should automate deletion of data you no longer need. For example, you should automatically delete data for customers whose contracts have not been renewed.',
-        links: [
-            {href: "https://advisera.com/eugdpracademy/gdpr/principles-relating-to-processing-of-personal-data/",
-              title: 'GDPR Article 5 – Principles relating to processing of personal data'
-            }
-        ]
-      },
-      {
-        id: 4,
-        title: 'Your customers can easily request deletion of their personal data',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
-        links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-erasure-right-to-be-forgotten/",
-              title: 'GDPR Article 17 – Right to erasure (‘right to be forgotten’)'
-            }
-        ]
-      },
-      {
-        id: 5,
-        title: 'Your customers can easily request that you stop processing their data',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
-        links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-restriction-of-processing/",
-              title: 'GDPR Article 18 – Right to restriction of processing'
-            }
-        ]
-      },
-      {
-        id: 6,
-        title: 'Your customers can easily request that their data be delivered to themselves or a 3rd party',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
-        links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-data-portability/",
-              title: 'GDPR Article 20 – Right to data portability'
-            }
-        ]
-      },
-      {
-        id: 7,
-        title: 'Your customers can easily object to profiling or automated decision making that could impact them',
-        role: ['controller'],
-        description: 'This is only applicable if your company does profiling or any other automated decision making. If you do not already have a process defined for this, we\'ve made an easy online form below.',
-        links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/automated-individual-decision-making-including-profiling/",
-              title: 'Article 22 – Automated individual decision-making, including profiling'
-            }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'consent',
-    title:'Consent',
-    items: [{
-        id: 1,
-        title: 'Where processing is based on consent, such consent must be freely given, specific, informed, and revocable',
-        role: [ 'controller'],
-        description: 'If your website collects personal information in some way, you should have an easily visble link to your privacy policy and confirm that the user accepts your terms and conditions. Consent requires an affirmative action, so pre-ticked boxes are not permitted.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
-           title: 'GDPR Article 7 – Conditions for consent'
-          }
-        ]
-      },
-      {
-        id: 2,
-        title: 'Your privacy policy should be written in clear and understandable terms ',
-        role: [ 'controller'],
-        description: 'It should be written in clear and simple terms and not conceal it\'s intent in any way. Failing to do so could void the agreement entirely. When providing services to children, the privacy policy should be easy enough for them to understand.',
-        links: [
-          { title: "Watchdog service for terms of service: Terms of Service; Didn't Read",
-           href: 'https://tosdr.org/'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
-           title: 'GDPR Article 7.2 – Conditions for consent'
-          }
-        ]
-      },
-      {
-        id: 3,
-        title: 'It should be as easy for your customers to withdraw consent as it was to give it in the first place',
-        role: [ 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
-        links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
-              title: 'GDPR Article 7.3 – Conditions for consent'
-            }
-        ]
-      },
-      {
-        id: 4,
-        title: 'If you process children\'s personal data, verify their age and ask consent from their legal guardian',
-        role: [ 'controller'],
-        description: 'For children younger than 16, you need to make sure a legal guardian has given consent for data processing. If consent is given via your website, you should try to make sure approval was actually given by the legal guardian (and not by the child).',
-        links: [
-            {href: "https://advisera.com/eugdpracademy/gdpr/conditions-applicable-to-childs-consent-in-relation-to-information-society-services/",
-              title: 'GDPR Article 8 – Conditions applicable to child’s consent in relation to information society services'
-            }
-        ]
-      },
-      {
-        id: 5,
-        title: 'When you update your privacy policy, you inform existing customers',
-        role: [ 'controller'],
-        description: 'for example, by emailing upcoming changes of your privacy policy. Your communication should explain in a simple way what has changed.',
-        links: [
-          {
-            href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
-            title: 'GDPR Article 7 – Conditions for consent'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'follow-up',
-    title:'Follow-up',
-    items: [{
-        id: 1,
-        title: 'You regularly review policies for changes, effectiveness, changes in handling of data and changes to the state of affairs of other countries your data flows to.',
-        role: [ 'controller'],
-        description: 'You should follow up on best practies and changes to the policies in your local environment. Sign up at the bottom of this page to receive major updates to this list.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
-           title: 'GDPR Article 25 – Data protection by design and by default'
-          },
-          {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'special-cases',
-    title:'Special cases',
-    items: [{
-        id: 1,
-        title: 'Your business understands when you must conduct a DPIA for high-risk processing of sensitive data.',
-        role: [ 'controller'],
-        description: 'This is only applies to businesses carrying out large-scale data processing, profiling and other activities with high risk to the rights and freedoms of people. A special assessment should be carried out in these cases.',
-        links: [
-          {href: 'https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/avg-nieuwe-europese-privacywetgeving/data-protection-impact-assessment-dpia',
-           title: 'DPIA according to the Dutch local authority (Dutch)'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-impact-assessment/",
-           title: 'GDPR Article 35 – Data protection impact assessment'
-          }
-        ]
-      },
-      {
-        id: 2,
-        title: 'You should only transfer data outside of the EU to countries that offer an appropriate level of protection',
-        role: ['processor', 'controller'],
-        description: 'You should also disclose these cross-border data flows in your privacy policy.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/transfers-on-the-basis-of-an-adequacy-decision/",
-           title: 'GDPR Article 45 – Transfers on the basis of an adequacy decision'
-          },
-          {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting center locations & hosting partners from cloud services & subprocessors"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'user-rights',
-    title:'User Rights',
+    id: 'do',
+    title:'Do',
+    description: 'Take the following measures to stop or slow down the spread of the Coronavirus.',
     items: [
       {
-        id: 1,
-        title: 'Right to receive transparent information, communication and modalities for the exercise of your rights.',
-        role: [ 'subject'],
-        description: 'The controller shall take appropriate measures to provide any information referred to in Articles 13 and 14 and any communication under Articles 15 to 22 and 34 relating to processing to you in a concise, transparent, intelligible and easily accessible form, using clear and plain language, in particular for any information addressed specifically to a child. The information shall be provided in writing, or by other means, including, where appropriate, by electronic means. When requested by you, the information may be provided orally, provided that your identity is proven by other means.',
+        id: 'wash-your-hands',
+        title: 'Wash your hands - 20 seconds with soap and warm water.',
+        role: ['individual'],
+        paragraphs: [
+          "[Here are great options](https://www.seattletimes.com/life/wellness/coronavirus-prevention-10-awesome-tunes-to-sing-while-you-wash-your-hands/?utm_medium=social&utm_campaign=owned_echobox_tw_m&utm_source=Twitter#Echobox=1583369786) of songs to sing to help you pass the time. Unlike some really stubborn viruses (like polio), viruses in the coronavirus family typically don’t survive longer than a [few hours on most surfaces hard surfaces; though it can be up to days. Bleach or ethanol are more effective at decontaminating surfaces than they are disinfecting humanskin](https://www.journalofhospitalinfection.com/article/S0195-6701(20)30046-3/fulltext). So don’t hoard the hand sanitizer, that should be used only when you do not have any access to a soap and water sink. At a restaurant? Wash your hands. At school? Wash your hands. Vigorous handwashing with soap really is vital to reduce transmission; the awesome science of why is [here](https://twitter.com/PalliThordarson/status/1236549305189597189). **If you do nothing else at all, do wash your hands.**",
+          "Bonus: [I Will Survive hand washing challenge (CNN)](https://edition.cnn.com/videos/entertainment/2020/03/13/gloria-gaynor-coronavirus-hand-washing-tiktok-challenge-mxp-vpx.hln/video/playlists/atv-trending-videos/)"
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-12-gdpr/',
-           title: 'GDPR Article 12'
+          {
+            href: "https://www.flattenthecurve.com/",
+            title: "Flatten the curve"
           }
         ]
       },
       {
-        id: 2,
-        title: 'Right to receive specific information when your personal data are collected from you directly.',
-        role: [ 'subject'],
-        description: 'This information is : 1) The identity and the contact details of the controller and, where applicable, of the controller’s representative. 2) The contact details of the data protection officer, where applicable. 3) The purposes of the processing for which the personal data are intended as well as the legal basis for the processing. 4) Where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party. 5) The recipients or categories of recipients of the personal data, if any. 6) Where applicable, the fact that the controller intends to transfer personal data to a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means by which to obtain a copy of them or where they have been made available.',
+        id: 'cover-coughs-sneezes',
+        title: 'Cover coughs and sneezes',
+        role: ['individual'],
+        paragraphs: [
+          `* **Cover your mouth and nose** with a tissue when you cough or sneeze or use the inside of your elbow.
+          * **Throw used tissues** in the trash.
+          * Immediately **wash your hands** with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.`
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-13-gdpr/',
-           title: 'GDPR Article 13'
+          {
+            href: "https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html",
+            title: "Centers for Disease Control and Prevention"
           }
         ]
       },
       {
-        id: 3,
-        title: 'Right to receive specific information when your personal data are not collected from you directly.',
-        role: [ 'subject'],
-        description: 'This information is : 1) The identity and the contact details of the controller and, where applicable, of the controller’s representative. 2) The contact details of the data protection officer, where applicable. 3) The purposes of the processing for which the personal data are intended as well as the legal basis for the processing. 4) The categories of personal data concerned. 5) The recipients or categories of recipients of the personal data, if any. 6)Where applicable, that the controller intends to transfer personal data to a recipient in a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means to obtain a copy of them or where they have been made available.',
+        id: 'facemask',
+        title: 'Wear a facemask if you are sick',
+        role: ['individual'],
+        paragraphs: [
+          '**If you are sick:** You should wear a facemask when you are around other people (e.g., sharing a room or vehicle) and before you enter a healthcare provider’s office. If you are not able to wear a facemask (for example, because it causes trouble breathing), then you should do your best to cover your coughs and sneezes, and people who are caring for you should wear a facemask if they enter your room. [Learn what to do if you are sick.](/coronavirus/2019-ncov/about/steps-when-sick.html)',
+          '**If you are NOT sick:** You do not need to wear a facemask unless you are caring for someone who is sick (and they are not able to wear a facemask). Facemasks may be in short supply and they should be saved for caregivers.'
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-14-gdpr/',
-           title: 'GDPR Article 14'
+          {
+            href: "https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html",
+            title: "Centers for Disease Control and Prevention"
+          },
+          {
+            href: "https://smartairfilters.com/en/blog/best-materials-make-diy-face-mask-virus/",
+            title: "What are the Best Materials for Making a DIY Face Mask?"
           }
         ]
       },
       {
-        id: 4,
-        title: 'Right of access: You have the right to obtain from the controller confirmation as to whether or not your personal data are being processed, and, where that is the case, access to your personal data.',
-        role: [ 'subject'],
-        description: 'You also have to right to access the following information: 1) The purposes of the processing. 2) The categories of personal data concerned. 3) The recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations. 4) Where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period. 5) The existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing. 6) The right to lodge a complaint with a supervisory authority. 7) Where the personal data are not collected from the data subject, any available information as to their source. 8) The existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject.',
+        id: 'clean-and-disinfect',
+        title: 'Clean and disinfect',
+        role: ['individual'],
+        paragraphs: [
+          '**Clean AND disinfect [frequently touched surfaces](/coronavirus/2019-ncov/community/home/cleaning-disinfection.html) daily**. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.',
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-15-gdpr/',
-           title: 'GDPR Article 15'
+          {
+            href: "https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html",
+            title: "Centers for Disease Control and Prevention"
+          },
+          {
+            href: "https://coronachecklist.org/"
           }
         ]
       },
       {
-        id: 5,
-        title: 'Right to rectification: You have the right to obtain from the controller without undue delay the rectification of inaccurate personal data.',
-        role: [ 'subject'],
-        description: 'Taking into account the purposes of the processing, you have the right to have incomplete personal data completed, including by means of providing a supplementary statement.',
+        id: 'social-distancing',
+        title: 'Social distancing - 6 feet is safest from infectious droplet spread',
+        role: ['individual'],
+        paragraphs: [
+          'In the absence of a vaccine or treatment “[social distancing](https://qz.com/1816060/a-chart-of-the-1918-spanish-flu-shows-why-social-distancing-works/),” or limiting non-essential gatherings, is one way to slow that spread. Of course, in a growing list of places including China, Italy, and New Rochelle, New York, government-issued quarantines, curfews, and other restrictions are already in effect. And some employers and schools have already mandated work- or study-from-home, removing the pressure of deciding whether to keep ourselves or our children home.',
+          "It is best to stand at a distance from people. 6 feet or more is safest from infectious droplet spread. The higher your underlying risk factors (age, recent major surgery, cancer, immunocompromised, asthma, diabetes, etc), the more you should avoid crowds. &nbsp;",
+          "CDC has recommended that [older adults ‘stay at home as much as possible’](https://fox8.com/news/coronavirus/cdc-older-adults-should-stay-at-home-as-much-as-possible-due-to-coronavirus/). But keep in mind that over the longer term, this isolation could have negative impacts on many people’s mental health. Cultivating meaningful relationships is a well established but under-appreciated determinant for all health outcomes. So DO see the people you love, but consider doing so via lower-risk activities. For instance, go for a walk outside with a smaller group of people rather than attending an event indoors. Go to the beach. Ride bikes. Golf. Picnic more. This is not going away in one week, so pace yourself."
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-16-gdpr/',
-           title: 'GDPR Article 16'
+          {
+            href: "https://www.flattenthecurve.com/",
+            title: "Flatten the curve"
+          },
+          {
+            href: 'https://qz.com/1816095/should-i-stay-home-because-of-coronavirus/',
+            title: 'Quartz - The ethics of staying home in the face of coronavirus'
+          },
+          {
+            href: 'https://www.washingtonpost.com/graphics/2020/world/corona-simulator/',
+            title: 'The Washington Post - The effect of lockdown and social distancing'
+          },
+          {
+            href: 'https://www.theatlantic.com/family/archive/2020/03/coronavirus-what-does-social-distancing-mean/607927/',
+            title: 'The Dos and Don’ts of ‘Social Distancing’ - The Atlantic'
+          },
+          {
+            href: 'https://www.today.com/health/social-distancing-coronavirus-social-distancing-t175379'
           }
         ]
       },
       {
-        id: 6,
-        title: 'Right to erasure: You have the right to obtain from the controller the erasure of your personal data without undue delay.',
-        role: [ 'subject'],
-        description: 'The controller shall have the obligation to erase your personal data without undue delay where one of the following grounds applies: 1) The personal data are no longer necessary in relation to the purposes for which they were collected or otherwise processed. 2) The data subject withdraws consent on which the processing is based according to point (a) of Article 6(1), or point (a) of Article 9(2), and where there is no other legal ground for the processing. 3) The data subject objects to the processing pursuant to Article 21(1) and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to Article 21(2). 4) The personal data have been unlawfully processed. 5) The personal data have to be erased for compliance with a legal obligation in Union or Member State law to which the controller is subject. 6) The personal data have been collected in relation to the offer of information society services referred to in Article 8(1).',
+        id: 'professional-distancing',
+        title: 'Work remote - if your job allows it',
+        role: ['individual'],
+        paragraphs: [
+          'As the coronavirus spreads around the world, public-health experts are encouraging people to engage in social distancing: The limiting of non-essential gatherings. And thanks to technology, many professionals can now work from anywhere with a laptop and a high-speed internet connection.',
+          'Yet some employees are finding themselves flummoxed by bosses who insist on working together in a shared office space. If you’re in this position and trying to figure out how to broach the topic with your manager, consider [these templates](https://qz.com/work/1818508/how-to-tell-your-boss-youre-working-from-home-because-of-coronavirus/) from a few employees who have told their bosses gently and effectively that gathering in the office is, well, non-essential.',
+          'Most companies already have taken proactive measures to enable their employees to work remotely. List: [https://stayinghome.club/]'
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-17-gdpr/',
-           title: 'GDPR Article 17'
+          {
+            href: 'https://qz.com/1816095/should-i-stay-home-because-of-coronavirus/',
+            title: 'Quartz - The ethics of staying home in the face of coronavirus'
           }
         ]
       },
       {
-        id: 7,
-        title: 'Right to restriction of processing: You have the right to obtain from the controller restriction of processing.',
-        role: [ 'subject'],
-        description: 'This right applies in the following situations: 1) The accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy of the personal data. 2) The processing is unlawful and the data subject opposes the erasure of the personal data and requests the restriction of their use instead. 3) The controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims. 4) The data subject has objected to processing pursuant to Article 21(1) pending the verification whether the legitimate grounds of the controller override those of the data subject.',
+        id: 'flu-shot',
+        title: 'Get your flu shot (and if you’re 60+, pneumonia vaccine)',
+        role: ['individual'],
+        paragraphs: [ 
+          "Better late than never. The flu vaccine won’t protect you at all against Coronavirus. However it DOES reduce your likelihood of contracting flu. And therefore your likelihood of needing to be hospitalized, which also reduces your chances of contracting Coronavirus while you are there. If you’re 60+ get your pneumonia vaccine as well for the same reason."
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-18-gdpr/',
-           title: 'GDPR Article 18'
+          {
+            href: "https://www.flattenthecurve.com/",
+            title: "Flatten the curve"
           }
         ]
       },
       {
-        id: 8,
-        title: 'Right to be notified regarding rectification or erasure of your personal data or restriction of processing: The controller shall communicate any rectification or erasure of your personal data or restriction of processing.',
-        role: [ 'subject'],
-        description: 'This right is carried out in accordance with Article 16, Article 17(1) and Article 18 to each recipient to whom the personal data have been disclosed, unless this proves impossible or involves disproportionate effort. The controller shall inform you about those recipients if you requests it.',
+        id: 'medic-visits',
+        title: 'Medic visits - Cancel all non-essential face-to-face medic',
+        role: ['individual'],
+        paragraphs: [ 
+          "Hospitals are hot spots for transmission; get your vaccinations at a pharmacy rather than at the doctor. Find ways to do your physical therapy at home if possible.",
+          "Telemedicine professionals, this is your time to save the day, for everyone’s benefit but especially those in rural areas who are hard hit and without easy access to medical care. https://doxy.me and https://vsee.com/clinic/ provide free HIPAA compliant video platforms for telehealth.",
+          "JHU is developing resources here for hospital staff and administrators; more info [here](https://www.cbsnews.com/news/coronavirus-containment-dr-jon-lapook-60-minutes-2020-03-08/)."
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-19-gdpr/',
-           title: 'GDPR Article 19'
+          {
+            href: "https://www.flattenthecurve.com/",
+            title: "Flatten the curve"
           }
         ]
       },
       {
-        id: 9,
-        title: 'Right to portability: You have the right to receive your personal data, which you have provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which your personal data have been provided.',
-        role: [ 'subject'],
-        description: 'This processing is based on consent pursuant to point (a) of Article 6(1) or point (a) of Article 9(2) or on a contract pursuant to point (b) of Article 6(1); and the processing is carried out by automated means.',
+        id: 'travel',
+        title: 'Travel - Cancel all non-essential travel anywhere',
+        role: ['individual'],
+        paragraphs: [ 
+          "This illness can [start slow and accelerate suddenly](https://www.nejm.org/doi/full/10.1056/NEJMoa2001191). If you are away from home when it does, you’re away from the systems that could keep you fed and cared for even if you turn out not to have a bad case. Even if you remain healthy, you could end up being quarantined. It is atbest boring, at worst [terrible conditions](https://twitter.com/alankilbourne2/status/1236541651692204033), not to mention potentially really expensive. You could risk getting infected even if you are careful. Travel history is increasingly irrelevant to risk, especially because we are flying a bit blind with the lack of testing, but the available data of confirmed infections is available [here](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) from Johns Hopkins University. Strain genetics information is available [here](https://nextstrain.org/ncov?label=clade:B4&m=div).",
+          "In case you don't have any other option to travel, you should practice basic hygiene that can help [keep you from getting sick on planes](https://www.cnet.com/how-to/how-to-avoid-getting-sick-on-planes/)."
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-20-gdpr/',
-           title: 'GDPR Article 20'
+          {
+            href: "https://www.flattenthecurve.com/",
+            title: "Flatten the curve"
           }
         ]
       },
       {
-        id: 10,
-        title: 'Right to object: You have the right to object, on grounds relating to your particular situation, at any time to processing of your personal data which is based on point (e) or (f) of Article 6(1), including profiling based on those provisions.',
-        role: [ 'subject'],
-        description: 'The controller shall no longer process your personal data unless the controller demonstrates compelling legitimate grounds for the processing which override your interests, rights and freedoms or for the establishment, exercise or defence of legal claims.',
+        id: 'stock-up',
+        title: 'Slowly stock up on food and essentials - Gradually, and responsibly',
+        role: ['individual'],
+        paragraphs: [ 
+          "“Experts aren’t telling you to stock up on essentials because they think you’re going to run out of food & society is going to collapse. It’s because a [few days of panic buying & high demands cause more panic & stress systems unnecessarily](https://twitter.com/firefoxx66/status/1233666678841597952). Also, being in line with hundreds of people isn’t wise. Go off peak. Buy a little more than what you need. Preparedness isn’t about doing nothing, but also about not overreacting. It’s about doing your part to put the [*slack in our systems*](https://twitter.com/firefoxx66/status/1233666678841597952) so that short disruptions are smooth as possible, can absorb extra load, & resources remain available for those most in need."
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-21-gdpr/',
-           title: 'GDPR Article 21'
+          {
+            href: "https://www.flattenthecurve.com/",
+            title: "Flatten the curve"
           }
         ]
       },
       {
-        id: 11,
-        title: 'Right not to be subject to a decision based solely on automated processing: You have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects or similarly significantly affects you.',
-        role: [ 'subject'],
-        description: 'This does not applies if the decision: 1) is necessary for entering into, or performance of, a contract between the data subject and a data controller. 2) is authorised by Union or Member State law to which the controller is subject and which also lays down suitable measures to safeguard the data subject’s rights and freedoms and legitimate interests. 3) is based on the data subject’s explicit consent.',
+        id: 'mental-health',
+        title: 'Take care of your mental health',
+        role: ['individual']
+      },
+      {
+        id: 'learn',
+        title: 'Read about viruses - Get your knowledge up to speed',
+        role: ['individual'],
+        paragraphs: [ 
+          "Reading about the topic will reduce anxiety and help you cope with the outbreak more easily."
+        ],
         links: [
-          {href: 'https://gdpr-info.eu/art-22-gdpr/',
-           title: 'GDPR Article 22'
+          {
+            href: "https://www.theverge.com/2020/3/12/21175486/coronavirus-covid-19-pandemic-cases-outbreak-guide-information-who-cdc",
+            title: "The Verge - A GUIDE TO THE COVID-19 PANDEMIC"
           }
+        ]
+      },
+      {
+        id: 'keep-your-sanity',
+        title: 'Keep your sanity',
+        role: ['individual'],
+        paragraphs: [ 
+        ],
+        links: [
+          {
+            href: ""
+          }
+        ]
+      },
+      {
+        id: 'response-plan',
+        title: 'Update your response plan',
+        role: ['business'],
+        paragraphs: [ 
+          "Review your existing emergency preparedness and response plans and identify potential gaps for a pandemic emergency."
+        ],
+        links: [
+          {
+            href: "https://icma.org/coronavirus-resources-plan-and-prepare-now-it-hits-your-community"
+          },
+          {
+            href: "https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html"
+          }
+        ]
+      },
+      {
+        id: 'employee-health',
+        title: 'Priortize employee health over business results',
+        role: ['business'],
+        paragraphs: [ 
+          "Employee health, safety and well-being during this time is paramount. Employers need to be proactive in protecting their people and minimising the risk to staff and business continuity. The people profession needs to be at the forefront of the plans and critical decisions being made about the workforce."
+        ],
+        links: [
+          {
+            href: "https://www.cipd.co.uk/news-views/coronavirus",
+          }
+        ]
+      },
+      {
+        id: 'provide-tissues',
+        title: 'Provide tissues and no-touch disposal receptacles',
+        role: ['business'],
+        links: [
+          {
+            href: "https://coronachecklist.org/",
+          }
+        ]
+      },
+      {
+        id: 'sick-employees',
+        title: 'Actively encourage sick employees to stay home',
+        role: ['business'],
+        paragraphs: [ 
+          "Employees who have symptoms of acute respiratory illness are recommended to stay home and not come to work until they are free of fever (100.4° F / 37.8° C or greater using an oral thermometer), signs of a fever, and any other symptoms for at least 24 hours, without the use of fever-reducing or other symptom-altering medicines (e.g. cough suppressants). Employees should notify their supervisor and stay home if they are sick.",
+          "Employers should maintain flexible policies that permit employees to stay home to care for a sick family member. Employers should be aware that more employees may need to stay at home to care for sick children or other sick family members than is usual."
+        ],
+        links: [
+          {
+            href: "https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html"
+          },
+          {
+            href: "https://communications.frostbrowntodd.com/404/2779/march-2020/families-first-coronavirus-response-act--what-employers-need-to-know.asp?sid=44e5d1ac-a044-431b-9644-036388fef077",
+            title: "Families First Coronavirus Response Act: What Employers Need to Know (🇺🇸)"
+          }
+        ]
+      },
+      {
+        id: 'update-business hours',
+        title: 'Update your business hours',
+        role: ['business'],
+        paragraphs: [ 
+          "Google is asking businesses to update its Google My Business listings if the business is affected by COVID-19\. Google posted a new [help document](https://support.google.com/business/answer/9773423?p=covid_19) describing that businesses can update their business hours, phone numbers, business descriptions and/or use Google Posts to share more information."
+        ],
+        links: [
+          {
+            href: "https://searchengineland.com/google-my-business-tells-businesses-affected-by-the-coronavirus-to-update-listings-330331",
+            title: ""
+          }
+        ]
+      },
+      {
+        id: 'update-customers-partners',
+        title: 'Update customers and partners',
+        role: ['business'],
+        paragraphs: [
+          "Keep your customers and partners in the loop about the measures you're taking to ensure business continuity."
+        ]
+      },
+      {
+        id: 'remote-work',
+        title: 'Remote Work - Enable your employees to work from home',
+        role: ['business'],
+        paragraphs: [ 
+          "Join the Work from Home (WFH) movement."
+        ],
+        links: [
+          {
+            href: "https://www.theverge.com/2020/3/11/21171349/remote-work-how-to-home-coronavirus-quarantine-productivity-tips",
+          },
+          {
+            href: "https://www.nytimes.com/2020/03/10/technology/working-from-home.html",
+          },
+          {
+            href: "https://www.linkedin.com/pulse/how-crush-when-you-send-your-team-home-office-first-time-lukas-hertig/"
+          }
+        ]
+      },
+      {
+        id: 'remote-tools',
+        title: 'Remote Tools - Equip your remote workforce with the right stack',
+        role: ['business'],
+        paragraphs: [ 
+          "Review your current software stack and equip your team with the right tools to be productive at home."
+        ],
+        links: [
+          {
+            href: "https://glitch.com/remote/",
+          },
+          {
+            href: "https://standuply.com/330-remote-work-tools",
+          },
+          {
+            href: "https://www.remotesteam.com/"
+          }
+        ]
+      },
+      {
+        id: 'data-security-standards',
+        title: 'Maintain data security when staff is working from home',
+        role: ['business'],
+        paragraphs: [
+          "Secure your remote setup. Granted, setting up a company to allow remote work is not an overnight job. It requires time and effort — but more importantly, investment and budget. It’s an even bigger task to do it securely and without opening a door for hackers to walk in. But with the coronavirus spreading, now’s a better time than ever to roll out a plan."
+        ],
+        links: [
+          {
+            href: "https://techcrunch.com/2020/03/12/companies-secure-work-from-home-coronavirus/",
+          }
+        ]
+      },
+      {
+        id: 'review-marketing-spend',
+        title: 'Review marketing spend',
+        role: ['business'],
+        paragraphs: [ 
+          "With softening sales, you might find that your customer lifetime values have declined, in turn suggesting the need to rein in customer acquisition spending to maintain consistent returns on marketing spending. With greater economic and fundraising uncertainty, you might even want to consider raising the bar on ROI for marketing spend."
+        ],
+        links: [
+          {
+            href: "https://www.cnbc.com/2020/03/05/sequoia-capital-alerts-companies-about-coronavirus-economic-fallout.html"
+          }
+        ]
+      },
+      {
+        id: 'review-sales-forecasts',
+        title: 'Review sales forecasts',
+        role: ['business'],
+        paragraphs: [ 
+          "Even if you don’t see any direct or immediate exposure for your company, anticipate that your customers may revise their spending habits. Deals that seemed certain may not close. The key is to not be caught flat-footed."
+        ],
+        links: [
+          {
+            href: "https://medium.com/sequoia-capital/coronavirus-the-black-swan-of-2020-7c72bdeb9753"
+          }
+        ]
+      },
+      {
+        id: 'hiring-plan',
+        title: 'Revisit your hiring plan',
+        role: ['business'],
+        paragraphs: [
+          "Avoid hiring people without factoring an updated sales forecast and budget based on the new economic reality.",
+          "The team is the most expensive and important asset in every SaaS company. But, if you go out of business, you’ll lose all of these assets, so it’s essential to make the hard choices in time.",
+          "That might mean voluntary or involuntary exits. You could literally ask those who believe in the vision and long-term to raise their hands and tell you who they are. It might mean the end of a bonus structure. It might mean asking people to take salary reductions (it’s pay cuts or headcount reductions — depending on the team, the leaders need to figure out which puts the business in better shape)."
+        ],
+        links: [
+          {
+            href: "https://techcrunch.com/2020/03/13/the-good-saas-times-will-end-and-challenges-are-coming/",
+          }
+        ]
+      },
+      {
+        id: 'fundraising',
+        title: 'Review fundraising',
+        role: ['business'],
+        paragraphs: [ 
+          "Private financings could soften significantly, as happened in 2001 and 2009. What would you do if fundraising on attractive terms proves difficult in 2020 and 2021? Could you turn a challenging situation into an opportunity to set yourself up for enduring success? Many of the most iconic companies were forged and shaped during difficult times. We partnered with Cisco shortly after Black Monday in 1987. Google and PayPal soldiered through the aftermath of the dot-com bust. More recently, Airbnb, Square, and Stripe were founded in the midst of the Global Financial Crisis. Constraints focus the mind and provide fertile ground for creativity.",
+          "Investors will be reconsidering or renegotiating ongoing fundraising deals. Covid-19 is obviously a materially adverse effect and a valid reason to cancel any commitment. It is vital for founders to go into (or stay in) lean and mean mode. Don’t put your hopes on raising funds, but on making money."
+        ],
+        links: [
+          {
+            href: "https://medium.com/sequoia-capital/coronavirus-the-black-swan-of-2020-7c72bdeb9753",
+          },
+          {
+            href: "https://techcrunch.com/2020/03/12/doing-deals-through-zoom-these-investors-have-some-tips/"
+          },
+          {
+            href: "https://medium.com/techventures/the-impact-of-covid-19-on-ventures-52c8a9c47ca9"
+          }
+        ]
+      },
+      {
+        id: 'improve-cash-position',
+        title: 'Improve your cash position',
+        role: ['business'],
+        paragraphs: [
+          "Know your cash. A simple statement, but unfortunately, it’s rarely the case. You can’t rely on stories, promises and spreadsheets — you need to log in to your bank account multiple times a week. This isn’t hard and you’ll build a gut feel for your cash position and its movements quickly.",
+          "Know your cash revenue. Annual and Monthly Run Rate (ARR/MRR) matters, the Profit and Loss account matters, but in tough times, cash is king. If you get low on cash, and think you’re profitable because your P&L says so, you run a serious risk of going out of business.",
+          "Cash forecasting is essential — your run rate and your cash often don’t correlate — any pre-payments show up in revenue, but you don’t get that cash every month, so it may already be gone. The same goes for booked revenue that hasn’t paid and sits in aged accounts receivable (AR) — again, revenue but no cash."
+        ],
+        links: [
+          {
+            href: "https://techcrunch.com/2020/03/13/the-good-saas-times-will-end-and-challenges-are-coming/",
+          }
+        ]
+      },
+      {
+        id: 'cost-optimization',
+        title: 'Cost optimization - Audit your credit card statement',
+        role: ['business'],
+        paragraphs: [
+          "Audit your credit card statement — do you really need all those SaaS tools? Or better yet, cancel your credit card and get a new one — only re-add the tools you want as the dunning emails come on. I guarantee you’ll find things you’ve been paying for that you didn’t even know about."
+        ],
+        links: [
+          {
+            href: "https://techcrunch.com/2020/03/13/the-good-saas-times-will-end-and-challenges-are-coming/",
+          }
+        ]
+      },
+      {
+        id: 'donate-and-support',
+        title: 'Donate and support if you have the financial capacity',
+        role: ['business'],
+        paragraphs: [
+          "Examples:",
+          "Bill Gates, who recently left his position on Microsoft’s board, announced the Bill & Melinda Gates Foundation was teaming up with Wellcome and Mastercard to fund treatments to the tune of $125 million. Yesterday, Facebook announced it was committing $20 million in donations to support relief efforts. Apple announced a similar $15 million in donations, along with letting customers skip the March payment on their Apple Cards without risking interest payments. ISPs like AT&T, Charter, CenturyLink, Comcast, T-Mobile, Verizon, Sprint and Cox, meanwhile, have promised not to overcharge, charge late fees or terminate service, in an attempt to keep people connected.",
+          "Alibaba co-founder Jack Ma today released a statement noting plans to donate 500,000 test kits and one million face masks. The donation follows similar ones to Japan and Europe, following the devastating impact on his own country.",
+          "Zoom CEO Eric Yuan announced that his video conferencing platform would be available for free to K-12 schools in Japan, Italy and the U.S. The move comes as the service is seeing a massive spike in downloads as many businesses and schools are attempting to adapt to working and learning remotely."
+        ],
+        links: [
+          {
+            href: "https://techcrunch.com/2020/03/14/how-big-tech-is-taking-on-covid-19/",
+          },
+          {
+            href: "https://www.forbes.com/sites/alexkonrad/2020/03/13/zoom-video-coronavirus-eric-yuan-schools/#4649c5214e71"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'dont',
+    title:'Don\'t',
+    description: 'Take the following measures to stop or slow down the spread of the Coronavirus.',
+    items: [
+      {
+        id: 'dont-wait',
+        title: 'Do not just wait - speed is of the essence',
+        role: ['individual'],
+        paragraphs: [
+          "There [is no advantage to being late to adopt policies.](https://twitter.com/TomBossert/status/1236399377087959041) We are not yet in the peak and already many people are being turned away.",
+        ],
+        links: [
+          {
+            href: "https://www.flattenthecurve.com/",
+            title: "Flatten the curve"
+          }
+        ]
+      },
+      {
+        id: 'dont-touch-your-face',
+        title: 'Do not touch your face',
+        role: ['individual'],
+        paragraphs: [
+          "[That is the most common way the virus enters the body.](https://www.cdc.gov/coronavirus/2019-ncov/about/transmission.html) It is really hard to avoid; this is also why we advise staying home and avoiding crowds. It is also why top-down measures (event cancellation and imposed quarantine etc) work. The average person, even ones with baseline good hygiene, touch their faces constantly already without thinking about it. Especially with allergy season coming up, please keep this in mind.",
+        ],
+        links: [
+          {
+            href: "https://www.flattenthecurve.com/",
+            title: "Flatten the curve"
+          },
+          {
+            href: "https://www.theatlantic.com/ideas/archive/2020/03/trick-stop-touching-your-face/608050/",
+            title: "A Trick to Stop Touching Your Face - The Atlantic"
+          },
+          {
+            href: "https://donottouchyourface.com/"
+          }
+        ]
+      },
+      {
+        id: 'dont-visit-your-parents',
+        title: 'Do not visit your parents or elderlies',
+        role: ['individual'],
+        paragraphs: [
+          "Your parents are part the most vulerable demographic due to their weakened immune systems. Try to check in on them by phone or Skype.",
+        ],
+        "links": [
+          {
+            href: "https://www.bbc.com/news/uk-51855011",
+            title: "Coronavirus elderly advice: How can I look after my older relatives? - BBC"
+          }
+        ]
+      },
+      {
+        id: 'dont-business-travel',
+        title: 'Don\'t take unnecessary risks by letting your employees travel',
+        role: ['business'],
+        paragraphs: [
+          "Many companies have banned all “non-essential” travel and some have banned all international travel. While travel companies are directly impacted, all companies that depend on in-person meetings to conduct sales, business development, or partnership discussions are being affected.",
+        ],
+        "links": [
+          {
+            href: "https://www.cnbc.com/2020/03/05/sequoia-capital-alerts-companies-about-coronavirus-economic-fallout.html"
+          }
+        ]
+      },
+      {
+        id: 'dont-panic',
+        title: 'Don\'t panic',
+        role: ['business'],
+        paragraphs: [
+          "Difficult times bring out the true character of company leaders. Be human, but do your best to keep a level head under pressure. Show stability towards your team and take the measures above to derisk as much as possible.",
+        ],
+        links: [
+          "https://www.geekwire.com/2020/advice-startups-coronavirus-outbreak-curb-expenses-assess-hiring-dont-panic-human/"
         ]
       }
     ]
   }
 ]
 
+export const resourceLinks = {
+  "": [
+    "https://www.who.int/health-topics/coronavirus",
+    "https://www.flattenthecurve.com/",
+    "https://staythefuckhome.com/",
+    "https://stayinghome.club/",
+    "https://covidpages.com/",
+    "http://covid-solidarity.org/"
+  ],
+  "🇧🇪 Belgium": [
+    "https://www.info-coronavirus.be/",
+    "https://worksmarter.eu/bedrijven-die-van-thuis-werken-corona/",
+    "https://www.blijfgewoonthuis.be/",
+    "https://getaccountable.typeform.com/to/AJx2xu"
+  ],
+  "🇬🇧 United Kingdom": [
+    "https://www.cipd.co.uk/news-views/coronavirus"
+  ],
+  "🇺🇸 United States": [
+    "https://www.cdc.gov/coronavirus/2019-ncov/index.html"
+  ],
+  "Startups and businesses": [
+    "https://techcrunch.com/2020/03/13/the-good-saas-times-will-end-and-challenges-are-coming/",
+    "https://medium.com/@feliks/the-corona-crisis-checklist-for-start-up-ceos-5294dd05e5c2",
+    "https://medium.com/techventures/the-impact-of-covid-19-on-ventures-52c8a9c47ca9"
+  ]
+}
+
 export const roles = {
-  'controller': 'Data Controller',
-  'processor': 'Data Processor',
-  'subject': 'Data Subject',
+  'individual': 'Individuals, Households and Families',
+  'business': 'Businesses and Startups'
 }

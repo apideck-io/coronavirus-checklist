@@ -1,4 +1,4 @@
-<img src="https://github.com/GDPRTracker/GDPR-checklist/blob/master/src/images/github.png">
+<img src="https://github.com/apideck-io/coronavirus-checklist/blob/master/src/images/github.png">
 
 ## How to add updates to the checklist
 
@@ -16,9 +16,14 @@
 
 ## Deployment
 
-- changes will automatically be deployed to https://gdprchecklist.io/
+- changes will automatically be deployed to http://www.coronaviruschecklist.co/
+
+## Other checklists
+
+- [GDRP Checklist](https://gdprchecklist.io/)
+- [CCPA Checklist](https://ccpacompliancechecklist.com/)
 
 ## Attribution
 
-The project is inspired by [The SaaS CTO Security Checklist](https://cto-security-checklist.sqreen.io/) 
+The project is inspired by [The SaaS CTO Security Checklist](https://cto-security-checklist.sqreen.io/)
 created by [Sqreen.io](https://www.sqreen.io/)

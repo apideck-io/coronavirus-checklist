@@ -1,7 +1,10 @@
+const title = 'Coronavirus (COVID-19) checklist'
+const url = 'https://wwww.coronaviruschecklist.co'
+
 module.exports = {
   siteMetadata: {
-    title: 'The GDPR Checklist',
-    siteUrl: 'https://gdprchecklist.io'
+    title: title,
+    siteUrl: url
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://gdprchecklist.io',
-        sitemap: 'https://gdprchecklist.io/sitemap.xml',
+        host: url,
+        sitemap: url + '/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
