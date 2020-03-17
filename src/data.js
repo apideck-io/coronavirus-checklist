@@ -226,7 +226,7 @@ export const steps = [
       },
       {
         id: 'employee-health',
-        title: 'Priortize employee health over business results',
+        title: 'Prioritize employee health over business results',
         role: ['business'],
         paragraphs: [ 
           "Employee health, safety and well-being during this time is paramount. Employers need to be proactive in protecting their people and minimising the risk to staff and business continuity. The people profession needs to be at the forefront of the plans and critical decisions being made about the workforce."
