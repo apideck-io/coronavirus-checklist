@@ -303,6 +303,9 @@ export const steps = [
           },
           {
             href: "https://www.linkedin.com/pulse/how-crush-when-you-send-your-team-home-office-first-time-lukas-hertig/"
+          },
+          {
+            href: "https://medium.com/iubenda/coronavirus-and-remote-working-a-practical-guide-aa5a60def85b"
           }
         ]
       },
@@ -348,6 +351,10 @@ export const steps = [
         links: [
           {
             href: "https://www.cnbc.com/2020/03/05/sequoia-capital-alerts-companies-about-coronavirus-economic-fallout.html"
+          },
+          {
+            href: "https://www.bloomberg.com/news/articles/2020-03-17/amazon-cut-spending-on-google-advertising-in-recent-days",
+            title: "Amazon Cut Spending on Google Advertising in Recent Days"
           }
         ]
       },
