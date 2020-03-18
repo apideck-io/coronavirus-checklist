@@ -546,7 +546,8 @@ export const resourceLinks = {
     "https://stayinghome.club/",
     "https://techagainstcoronavirus.com/",
     "https://covidpages.com/",
-    "http://covid-solidarity.org/"
+    "http://covid-solidarity.org/",
+    "https://helpwithcovid.com/"
   ],
   "Trackers": [
     "https://ncov2019.live/"
