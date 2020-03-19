@@ -197,6 +197,24 @@ export const steps = [
         ]
       },
       {
+        id: 'keep-track',
+        title: 'Keep track of the spread of the coronavirus',
+        role: ['individual'],
+        paragraphs: [ 
+          "Stay updated and keep track of the reported coronavirus cases for your country and around the globe."
+        ],
+        links: [
+          {
+            href: "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
+            title: "An online dashboard (by CSSE and WHO) to keep up with all reported cases"
+          },
+          {
+            href: "https://covy.app/",
+            title: "Visualize the growth of COVID-19 in your area"
+          }
+        ]
+      },
+      {
         id: 'keep-smiling',
         title: 'Keep smiling and stay positive',
         role: ['individual'],
@@ -570,7 +588,12 @@ export const resourceLinks = {
     "https://helpwithcovid.com/"
   ],
   "Trackers": [
-    "https://ncov2019.live/"
+    "https://ncov2019.live/",
+    "https://edition.cnn.com/interactive/2020/health/coronavirus-maps-and-cases/](https://edition.cnn.com/interactive/2020/health/coronavirus-maps-and-cases/",
+    "https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/world-map.html](https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/world-map.html",
+    "https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd](https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd",
+    "https://covy.app/",
+    "https://public.tableau.com/profile/jason.yang6304#!/vizhome/corona_virus/CoronaVirus](https://public.tableau.com/profile/jason.yang6304#!/vizhome/corona_virus/CoronaVirus"
   ],
   "🇧🇪 Belgium": [
     "https://www.info-coronavirus.be/",
@@ -578,7 +601,8 @@ export const resourceLinks = {
     "https://worksmarter.eu/bedrijven-die-van-thuis-werken-corona/",
     "https://www.blijfgewoonthuis.be/",
     "https://getaccountable.typeform.com/to/AJx2xu",
-    "http://helpper-corona.be"
+    "http://helpper-corona.be",
+    "https://www.facebook.com/letssupport.be"
   ],
   "🇬🇧 United Kingdom": [
     "https://www.cipd.co.uk/news-views/coronavirus"
