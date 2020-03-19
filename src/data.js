@@ -180,37 +180,23 @@ export const steps = [
       {
         id: 'mental-health',
         title: 'Take care of your mental health',
-        role: ['individual']
-      },
-      {
-        id: 'learn',
-        title: 'Read about viruses - Get your knowledge up to speed',
         role: ['individual'],
-        paragraphs: [ 
-          "Reading about the topic will reduce anxiety and help you cope with the outbreak more easily."
+        paragraphs: [
+          "Check out these resources that could be useful in promoting wellness and maintaining good mental health throughout these stressful times.",
+          "[Headspace](https://www.headspace.com/) – This app helps you to de-stress, increase focus, and decreases frequency of burn-out through guided meditation via the app. It has been implemented in workplaces to increase productivity and could be useful to assuage feelings of anxiety in tense times such as these.",
+          "[Calm](https://www.calm.com/) – A multifaceted app that gives you access to breathing exercises, soothing music, guided meditation, and serene scenes of nature that can all contribute to a sense of wellbeing."
         ],
         links: [
           {
-            href: "https://www.theverge.com/2020/3/12/21175486/coronavirus-covid-19-pandemic-cases-outbreak-guide-information-who-cdc",
-            title: "The Verge - A GUIDE TO THE COVID-19 PANDEMIC"
-          }
-        ]
-      },
-      {
-        id: 'keep-track',
-        title: 'Keep track of the spread of the coronavirus',
-        role: ['individual'],
-        paragraphs: [ 
-          "Stay updated and keep track of the reported coronavirus cases for your country and around the globe."
-        ],
-        links: [
-          {
-            href: "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
-            title: "An online dashboard (by CSSE and WHO) to keep up with all reported cases"
+            href: "https://www.cdc.gov/coronavirus/2019-ncov/prepare/managing-stress-anxiety.html"
           },
           {
-            href: "https://covy.app/",
-            title: "Visualize the growth of COVID-19 in your area"
+            href: 'https://www.healthline.com/health-news/taking-care-of-your-mental-health-during-covid19-outbreak',
+            title: 'Being Mindful of Your Mental Health During the COVID-19 Outbreak'
+          },
+          {
+            href: 'https://afsp.org/taking-care-of-your-mental-health-in-the-face-of-uncertainty/',
+            title: 'Taking Care of Your Mental Health in the Face of Uncertainty'
           }
         ]
       },
@@ -233,6 +219,38 @@ export const steps = [
           {
             href: "https://edition.cnn.com/2020/03/19/health/coronavirus-cabin-fever-definition-quarantine-wellness/index.html",
             title: "Do I have 'cabin fever?' What it is, how to 'cure' it"
+          }
+        ]
+      },
+      {
+        id: 'learn',
+        title: 'Read about viruses - Get your knowledge up to speed (BONUS)',
+        role: ['individual'],
+        paragraphs: [ 
+          "Reading about the topic will reduce anxiety and help you cope with the outbreak more easily."
+        ],
+        links: [
+          {
+            href: "https://www.theverge.com/2020/3/12/21175486/coronavirus-covid-19-pandemic-cases-outbreak-guide-information-who-cdc",
+            title: "The Verge - A GUIDE TO THE COVID-19 PANDEMIC"
+          }
+        ]
+      },
+      {
+        id: 'keep-track',
+        title: 'Keep track of the spread of the coronavirus (BONUS)',
+        role: ['individual'],
+        paragraphs: [ 
+          "Stay updated and keep track of the reported coronavirus cases for your country and around the globe."
+        ],
+        links: [
+          {
+            href: "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
+            title: "An online dashboard (by CSSE and WHO) to keep up with all reported cases"
+          },
+          {
+            href: "https://covy.app/",
+            title: "Visualize the growth of COVID-19 in your area"
           }
         ]
       },
@@ -589,11 +607,11 @@ export const resourceLinks = {
   ],
   "Trackers": [
     "https://ncov2019.live/",
-    "https://edition.cnn.com/interactive/2020/health/coronavirus-maps-and-cases/](https://edition.cnn.com/interactive/2020/health/coronavirus-maps-and-cases/",
-    "https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/world-map.html](https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/world-map.html",
-    "https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd](https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd",
+    "https://edition.cnn.com/interactive/2020/health/coronavirus-maps-and-cases/",
+    "https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/world-map.html",
+    "https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd",
     "https://covy.app/",
-    "https://public.tableau.com/profile/jason.yang6304#!/vizhome/corona_virus/CoronaVirus](https://public.tableau.com/profile/jason.yang6304#!/vizhome/corona_virus/CoronaVirus"
+    "https://public.tableau.com/profile/jason.yang6304#!/vizhome/corona_virus/CoronaVirus"
   ],
   "🇧🇪 Belgium": [
     "https://www.info-coronavirus.be/",
