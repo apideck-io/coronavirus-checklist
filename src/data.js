@@ -636,6 +636,6 @@ export const resourceLinks = {
 }
 
 export const roles = {
-  'individual': 'Individuals, Households and Families',
+  'individual': 'Individuals, Households, and Families',
   'business': 'Businesses and Startups'
 }
