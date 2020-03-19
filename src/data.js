@@ -642,6 +642,9 @@ export const resourceLinks = {
     "https://medium.com/@feliks/the-corona-crisis-checklist-for-start-up-ceos-5294dd05e5c2",
     "https://medium.com/techventures/the-impact-of-covid-19-on-ventures-52c8a9c47ca9"
   ],
+  "ResTech": [
+    "https://thespoon.tech/own-a-restaurant-here-are-some-resources-for-surviving-covid-19/"
+  ],
   "Students and teachers": [
     "https://www.notion.so/Remote-wiki-for-students-teachers-ac514cd3dce9440fad05022c93401c05"
   ]

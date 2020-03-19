@@ -41,8 +41,8 @@ module.exports = class HTML extends React.Component {
                 {
                   "@context": "http://schema.org",
                   "@type": "Organization",
-                  "name": ${productName},
-                  "url": ${url},
+                  "name": "${productName}",
+                  "url": "${url}",
                   "sameAs": [
                       "https://twitter.com/${twitterHandle}"
                   ]
