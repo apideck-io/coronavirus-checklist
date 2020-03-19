@@ -352,6 +352,14 @@ export const steps = [
           },
           {
             href: "https://medium.com/iubenda/coronavirus-and-remote-working-a-practical-guide-aa5a60def85b"
+          },
+          {
+            href: "https://get.arc.dev/remote-work-faqs",
+            title: "Remote Work FAQs: Answers from WFH Experts"
+          },
+          {
+            href: "https://www.notion.so/notion/Remote-work-wiki-1b21ef5501714fffa9f5c5c25677371f",
+            title: "Remote work wiki by Notion"
           }
         ]
       },
@@ -629,9 +637,13 @@ export const resourceLinks = {
     "https://www.cdc.gov/coronavirus/2019-ncov/index.html"
   ],
   "Startups and businesses": [
+    "https://docs.google.com/document/d/10tOPCtmiuruWAI69kcPdumKU8IiDOqL5FM9c_9XYThw/edit?fbclid=IwAR1TqSotjIxfsYGNfFO3mzBTj0xaHaIJdCqM_t7eb6gbQAMGbjvP69Swlv4&pli=1",
     "https://techcrunch.com/2020/03/13/the-good-saas-times-will-end-and-challenges-are-coming/",
     "https://medium.com/@feliks/the-corona-crisis-checklist-for-start-up-ceos-5294dd05e5c2",
     "https://medium.com/techventures/the-impact-of-covid-19-on-ventures-52c8a9c47ca9"
+  ],
+  "Students and teachers": [
+    "https://www.notion.so/Remote-wiki-for-students-teachers-ac514cd3dce9440fad05022c93401c05"
   ]
 }
 
