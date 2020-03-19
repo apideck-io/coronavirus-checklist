@@ -213,7 +213,8 @@ export const steps = [
         ],
         links: [
           {
-            href: ""
+            href: "https://edition.cnn.com/2020/03/19/health/coronavirus-cabin-fever-definition-quarantine-wellness/index.html",
+            title: "Do I have 'cabin fever?' What it is, how to 'cure' it"
           }
         ]
       },
@@ -343,14 +344,19 @@ export const steps = [
       },
       {
         id: 'data-security-standards',
-        title: 'Maintain data security when staff is working from home',
+        title: 'Maintain data security and protection standards',
         role: ['business'],
         paragraphs: [
-          "Secure your remote setup. Granted, setting up a company to allow remote work is not an overnight job. It requires time and effort — but more importantly, investment and budget. It’s an even bigger task to do it securely and without opening a door for hackers to walk in. But with the coronavirus spreading, now’s a better time than ever to roll out a plan."
+          "Secure your remote setup. Granted, setting up a company to allow remote work is not an overnight job. It requires time and effort — but more importantly, investment and budget. It’s an even bigger task to do it securely and without opening a door for hackers to walk in. But with the coronavirus spreading, now’s a better time than ever to roll out a plan.",
+          "As organisations implement emergency measures, it is important to be aware of the privacy implications of any steps being taken. Any measures which involve processing of personal data are likely to give rise to data protection compliance issues that will need to be managed consistent with applicable data protection regulations."
         ],
         links: [
           {
             href: "https://techcrunch.com/2020/03/12/companies-secure-work-from-home-coronavirus/",
+          },
+          {
+            href: "https://blogs.dlapiper.com/privacymatters/eu-eu-data-protection-covid-19/",
+            title: "EU DATA PROTECTION : COVID-19"
           }
         ]
       },
