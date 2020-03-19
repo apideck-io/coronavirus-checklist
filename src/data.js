@@ -197,6 +197,15 @@ export const steps = [
         ]
       },
       {
+        id: 'keep-smiling',
+        title: 'Keep smiling and stay positive',
+        role: ['individual'],
+        paragraphs: [ 
+          "Keeping on a smile and staying positive can help us through these challenging times.",
+          "[Join the #CoronaVirusChallenge](https://twitter.com/hashtag/CoronaVirusChallenge)"
+        ]
+      },
+      {
         id: 'keep-your-sanity',
         title: 'Keep your sanity',
         role: ['individual'],
@@ -325,6 +334,10 @@ export const steps = [
           },
           {
             href: "https://www.remotesteam.com/"
+          },
+          {
+            href: "https://techcrunch.com/2020/03/17/zoombombing/",
+            title: "Beware of ‘ZoomBombing:’ screensharing filth to video calls"
           }
         ]
       },
@@ -555,6 +568,7 @@ export const resourceLinks = {
   ],
   "🇧🇪 Belgium": [
     "https://www.info-coronavirus.be/",
+    "https://www.coronadenktank.be/",
     "https://worksmarter.eu/bedrijven-die-van-thuis-werken-corona/",
     "https://www.blijfgewoonthuis.be/",
     "https://getaccountable.typeform.com/to/AJx2xu",
