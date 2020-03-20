@@ -364,6 +364,18 @@ export const steps = [
         ]
       },
       {
+        id: 'remote-sales-survival-guide',
+        title: 'Remote Sales Survival Guide ',
+        role: ['business'],
+        paragraphs: [ 
+          "The no bullsh!t guide to selling—and surviving—in a time of adversity."
+        ],
+        links: [
+          {
+            href: "https://close.com/remote-sales/?ref=coronaviruschecklist",
+          },
+      },
+      {
         id: 'remote-tools',
         title: 'Remote Tools - Equip your remote workforce with the right stack',
         role: ['business'],
