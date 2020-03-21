@@ -99,6 +99,14 @@ export const steps = [
           },
           {
             href: 'https://www.today.com/health/social-distancing-coronavirus-social-distancing-t175379'
+          },
+          {
+            href: 'https://virtualassembly.club/',
+            title: 'Directory of free virtual events, courses & tools'
+          },
+          {
+            href: 'https://socialdistancing.works/',
+            title: 'Encourage people to self-quarantine is by adding a mask to our profile pic'
           }
         ]
       },
@@ -115,6 +123,10 @@ export const steps = [
           {
             href: 'https://qz.com/1816095/should-i-stay-home-because-of-coronavirus/',
             title: 'Quartz - The ethics of staying home in the face of coronavirus'
+          },
+          {
+            href: 'https://wfhmanual.com/',
+            title: 'A super huge collection of WFH tips and resources'
           }
         ]
       },
@@ -219,6 +231,10 @@ export const steps = [
           {
             href: "https://edition.cnn.com/2020/03/19/health/coronavirus-cabin-fever-definition-quarantine-wellness/index.html",
             title: "Do I have 'cabin fever?' What it is, how to 'cure' it"
+          },
+          {
+            href: "https://www.staysane.co/",
+            title: "StaySane.co - A collection of crowdsourced content while in self-isolation"
           }
         ]
       },
@@ -629,7 +645,8 @@ export const resourceLinks = {
     "https://getaccountable.typeform.com/to/AJx2xu",
     "http://helpper-corona.be",
     "https://www.facebook.com/letssupport.be",
-    "https://www.hulpvoorhelden.be/"
+    "https://www.hulpvoorhelden.be/",
+    "https://www.feedthenurses.be/"
   ],
   "🇬🇧 United Kingdom": [
     "https://www.cipd.co.uk/news-views/coronavirus"
