@@ -628,13 +628,15 @@ export const resourceLinks = {
     "https://www.blijfgewoonthuis.be/",
     "https://getaccountable.typeform.com/to/AJx2xu",
     "http://helpper-corona.be",
-    "https://www.facebook.com/letssupport.be"
+    "https://www.facebook.com/letssupport.be",
+    "https://www.hulpvoorhelden.be/"
   ],
   "🇬🇧 United Kingdom": [
     "https://www.cipd.co.uk/news-views/coronavirus"
   ],
   "🇺🇸 United States": [
-    "https://www.cdc.gov/coronavirus/2019-ncov/index.html"
+    "https://www.cdc.gov/coronavirus/2019-ncov/index.html",
+    "https://saveourfaves.org/"
   ],
   "Startups and businesses": [
     "https://docs.google.com/document/d/10tOPCtmiuruWAI69kcPdumKU8IiDOqL5FM9c_9XYThw/edit?fbclid=IwAR1TqSotjIxfsYGNfFO3mzBTj0xaHaIJdCqM_t7eb6gbQAMGbjvP69Swlv4&pli=1",
