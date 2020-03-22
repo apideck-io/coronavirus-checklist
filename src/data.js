@@ -522,8 +522,8 @@ export const steps = [
           "Bill Gates, who recently left his position on Microsoft’s board, announced the Bill & Melinda Gates Foundation was teaming up with Wellcome and Mastercard to fund treatments to the tune of $125 million. Yesterday, Facebook announced it was committing $20 million in donations to support relief efforts. Apple announced a similar $15 million in donations, along with letting customers skip the March payment on their Apple Cards without risking interest payments. ISPs like AT&T, Charter, CenturyLink, Comcast, T-Mobile, Verizon, Sprint and Cox, meanwhile, have promised not to overcharge, charge late fees or terminate service, in an attempt to keep people connected.",
           "Alibaba co-founder Jack Ma today released a statement noting plans to donate 500,000 test kits and one million face masks. The donation follows similar ones to Japan and Europe, following the devastating impact on his own country.",
           "Zoom CEO Eric Yuan announced that his video conferencing platform would be available for free to K-12 schools in Japan, Italy and the U.S. The move comes as the service is seeing a massive spike in downloads as many businesses and schools are attempting to adapt to working and learning remotely.",
-          "Full list: [https://techagainstcoronavirus.com/]",
-          "Donate your software at [https://softwaredonation.org/]"
+          "Full list: https://techagainstcoronavirus.com/",
+          "Donate your software at https://softwaredonation.org/"
         ],
         links: [
           {
@@ -637,6 +637,9 @@ export const resourceLinks = {
     "https://covy.app/",
     "https://public.tableau.com/profile/jason.yang6304#!/vizhome/corona_virus/CoronaVirus"
   ],
+  "Research": [
+    "https://github.com/midas-network/COVID-19"
+  ],
   "🇧🇪 Belgium": [
     "https://www.info-coronavirus.be/",
     "https://www.coronadenktank.be/",
@@ -647,6 +650,9 @@ export const resourceLinks = {
     "https://www.facebook.com/letssupport.be",
     "https://www.hulpvoorhelden.be/",
     "https://www.feedthenurses.be/"
+  ],
+  "🇨🇦 Canada": [
+    "https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html"
   ],
   "🇬🇧 United Kingdom": [
     "https://www.cipd.co.uk/news-views/coronavirus"
